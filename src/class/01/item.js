@@ -3,6 +3,7 @@ import React,{Component} from 'react';
 import {Battery} from './index';
 
 class Item extends Component{
+    static contextType = Battery;
     render(){
         return (
         	<Battery.Consumer>
@@ -16,4 +17,6 @@ class Item extends Component{
         );
     }
 }
+
+// Item.contextType = Battery;
 export default Item
