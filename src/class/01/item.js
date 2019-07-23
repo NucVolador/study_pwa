@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 
-import {Battery} from './index';
+import {Battery} from './battery';
 
 class Item extends Component{
     static contextType = Battery;

@@ -1,7 +1,11 @@
 import React,{Component} from 'react';
 import Parent from './parent';
+import {Battery} from './battery'
 
-export let Battery = React.createContext();
+// context不能注册在index中，会引起循环引用，
+// index -> parent -> item -> index
+
+// export let Battery = React.createContext();
 
 class Demo extends Component{
 	state = {
