@@ -18,6 +18,8 @@ class Index extends Component {
         }
     }
 
+    //问题，在捕获到加载错误后，如何重新请求
+
     render() {
         if(this.state.hasError){
             return (
