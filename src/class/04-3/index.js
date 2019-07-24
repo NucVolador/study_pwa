@@ -86,8 +86,9 @@ function Index(){
     return (
         <div>
             <button onClick={()=>{
-                setCount(count + 1)
-            }}>
+                        setCount(count + 1)
+                    }}
+            >
                 count: { count }
             </button>
             <br/>
@@ -101,7 +102,6 @@ function Index(){
                         size: {size.width} * {size.height}
                     </p>
             }
-
         </div>
     )
 }
